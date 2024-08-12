@@ -1,0 +1,12 @@
+let num1=10;
+let num2=5;
+let add_result=num1+num2;
+let sub_result=num1-num2;
+let multi_result=num1*num2;
+let div_result=num1/num2;
+let modulo_result=num1%num2;
+console.log(add_result);
+console.log(sub_result);
+console.log(multi_result);
+console.log(div_result);
+console.log(modulo_result);
