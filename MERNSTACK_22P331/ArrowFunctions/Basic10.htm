@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task-51
+    //     let greet=(name)=>{
+    //         return `hello: ${name}!`
+    //     }
+    //    alert(greet("Naresh"))
+    //   alert(greet("Max"))
+
+    //Task-52
+    // let add=(num1,num2)=>{
+    //     alert(`Number 1 is${num1}`)
+    //     alert(`Number 2 is${num2}`)
+    //     return sum=num1+num2
+    // }
+    // alert(`The sum is:${add(5,7)}`)
+
+    //Task-53
+    // let even=(number)=>number%2==0
+    // alert(even(3))
+
+        // Task-54
+        // let maxValue=(number1,number2)=>{
+        //   return(number1>number2)? number1: number2
+        // }
+        // alert(`The max value is:${maxValue(7,5)}`);
+
+        //Task-55
+        let myObject={
+            value:10,
+            multiplytraditional:function(number1){
+                return this.value*number1;
+            },
+            multiplyArrow:(number2)=>{
+                return this.value*number2
+            }//when i use this it shows NAN(Not a number).So,we can't use this keyword.
+        };
+    alert(myObject.multiplytraditional(5));
+    alert(myObject.multiplyArrow(6));
+
+
+       
+    </script>
+</body>
+</html>

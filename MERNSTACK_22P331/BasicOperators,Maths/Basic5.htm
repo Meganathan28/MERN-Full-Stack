@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+</head>
+<body>
+    <script src="Task-30.js">
+        //Task-26
+            let string_value="12345"
+    let number_value=Number(string_value);//explict
+    let conversion=+string_value;//implict
+
+    alert(typeof(string_value));//string
+    alert(typeof(number_value));//number
+    alert(typeof(conversion));//number
+
+
+            //Task-27
+            let isAdmin=true;
+   // let string_value=String(isAdmin);//boolean to string
+    let boolean_value=Boolean(string_value);//string to boolean
+    //conversion
+    alert(typeof(string_value));
+    alert(typeof(boolean_value));
+
+        //Task-28
+            let number1=150;
+    let number2=150;
+    let add=number1+number2;
+    let sub=number1-number2;
+    let mul=number1*number2;
+    let div=number1/number2;
+    let mod=number1%number2;
+    alert(add);//300
+    alert(sub);//0
+    alert(mul);//22500
+    alert(div);//1
+    alert(mod);//0
+
+
+            //Task-29
+           // let number1=1;
+    //pre increment and decrement
+    // let inc=++number1;//Added by 1 result=2
+    // let dec=--number1;//Subtracted by 1 result=1
+    // alert(inc);//2
+    // alert(dec);//1
+
+    //post increment and decrement
+    let inc=number1++;//The value doesnot change .the value remains same as 1.
+    let dec=number1--;//here the value be 2.because the increment performs here.if i use the next variable it becomes 1 because of the decrement operation.
+    alert(inc);//1
+    alert(dec);//2
+
+
+            //Task-30
+            let a=5;
+    let b=6;
+    let c=7;
+    let d=8;
+    let e=9;
+    let f=2;
+    let g=3;
+    let result1=(e+d);//17
+    let result2=(e+d)*c;//119 the brackets performs first and after asteriods(*)
+    let result3=(e+d)*c-b;//113 the brackets performs first and after asteriods(*) and after subtraction.
+    let result4=(e+d)*c-b/a;//117.8 the brackets performs first and after asteriods(*) and division(/) both have same precendence and after the subtraction performs.
+    alert(result1);
+    alert(result2);
+    alert(result3);
+    alert(result4);
+    let result5=f**g*a;//40
+    alert(result5);
+    //1.bracket and next power takes place
+    //2.Astreis(*) and Division(/) and modulo(%)
+    //3.Add(+) and Sub(-)
+        </script>
+</body>
+</html>

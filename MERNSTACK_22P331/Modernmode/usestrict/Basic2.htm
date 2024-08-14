@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usescript</title>
+</head>
+<body>
+    <script >
+     //Task-11
+    a=5;
+    console.log(a);
+    b=7
+    alert(a+b);
+
+    //Task-12
+    //"use strict"
+    // b=13;
+    // alert(a+b);
+    //Uncaught ReferenceError: assignment to undeclared variable a
+    //when we use strict mode we must use variable types like let,var,const
+    let a=12;
+    let b=13;
+    alert(a+b);
+
+    //Task-13
+    "use strict"
+     var c=12;
+    //delete c;
+    //Uncaught SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
+    //when we use the strict mode in js it won't allow us to modify the data like the delete opertaion perform in the above. 
+    
+    //Task-14
+    //without using usestrict
+    // a=5;
+    // alert(a);
+    //It doesn't store any error.
+
+    //"use strict"
+    a=5;
+    alert(a);
+    //when we use usestrict we have to declare variable types to perform the action.
+    //or else it shows syntax error.
+    
+
+    //Task-15
+    "use strict"
+    //let if; It shows Uncaught SyntaxError: let is a reserved identifier.
+
+</script>
+</body>
+</html>

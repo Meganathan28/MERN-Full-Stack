@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task-41
+        let test1=22;
+        let test2=18;
+        if((test1 && test2)>20){
+            alert("Not eligible")
+        }else {//Both the values should be true.Or else it shows false.
+            alert("Eligible")
+        }
+
+        if((test1 || test2)>20){
+            alert("Not eligible")
+        }else {//Here either one is true.hence it accepts as true. 
+            alert("Eligible")
+        }
+        
+        if(!(test1 && test2)>20){//both are not same.Hence it is false ,When i use '!' .It changes false into true. 
+            alert("Not eligible")
+        }else {
+            alert("Eligible")//Eligible
+        }
+        //Task-42
+        let range1=5;
+        let range2=100;
+        let num3=75;
+        if((num3>range1)&&(num3<range2)){
+            alert("With in range");//With in the range.(When both are true)
+        }else{
+            alert("Out of range");//Both are false
+        }
+        if((num3<range1)||(num3>range2)){
+            alert("With in range");//When one of them is true.
+        }else{
+            alert("Out of range");//out of range(when both aree false)
+        }
+        //Task-43
+        if(!(num3>range1)){//When i use '!' operator it converts correct into false and false statement into true.
+            alert("With in range");//When true it prints
+        }else{
+            alert("Out of range");//when false it prints this....
+        }
+       //Task-44 and 45
+       let number5=7
+       let number6=!8;//when '0' it shows true when '1' it shows false
+       let number7=8&&7//when both are true it prints the second value.
+       let number8=8||7//when one of them is true prints the first one.
+       alert(number6)
+    </script>
+</body>
+</html>

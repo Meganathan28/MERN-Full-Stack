@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        //Task-31
+        let number1=5;
+        let number2=6;
+        let number3=5;
+        if(number1<number2){
+            console.log("Number1 is lesser");//accepted
+        }else{
+            console.log("Number2 is greater");
+        }
+        if(number1>number2){
+            console.log("Number1 is greater");
+        }else{
+            console.log("Number2 is greater");//accepted
+        }
+        if(number1<=number3){
+            console.log("Number1 is lesser or equal");//accepted
+        }else{
+            console.log("Number3 is greater than or equal");
+        }
+        if(number1>=number3){
+            console.log("Number3 is lessthan or equal");
+        }else{
+            console.log("Number1 is greater than or equal");//accepted
+        }
+
+        //Task-32
+        let name1="Hello"
+        let name2="hi"
+        let bool1=true;
+        let str1="1";
+        // if(num1==num2){//String converted into Number
+        //     console.log("Automated typecasting");
+        // }
+        if(str1==bool1){
+            console.log("Typecast Automatically");//here,Boolean true converted into string '1'
+        }
+        //when we use strict equality(===)
+        // if(num1===num2){//whwn we use strict equal both should be in same datatype.
+        //     console.log("Automated typecasting");
+        // }else{ //or it moves to else part
+        //     console.log("It won't typecast ");
+       // }
+        
+        //Task-33
+        let str2="Angle"
+        let str3="Angular"
+        let str4="Ant"
+        let str5="ant"
+        if(str3==str2){
+            console.log("Both are same");
+        }else{
+            console.log("Both are different");
+        }//it performs as dictionary order.So Ant performs first than ant.
+
+        //Task-34
+        let num1=7
+        let num2='7'
+        if(num1!=num2){//when i use '!==' typecast automatically
+            console.log("Both are not equal")
+        }else{//but when i use '!=' it checks the datatype too.
+            console.log("Casted Automatically")
+        }
+
+        //Task-35
+        let test1=null
+        let test2=undefined
+        if(test1===test2){
+            console.log("Same");
+        }else{
+            console.log("Not same");//output is not same because both should be same with same datatype
+        }
+        if(test1==test2){
+            console.log("Same");
+        }else{//But when i use '==' it typecast automatically and check the values.It won't be in same datatype.
+            console.log("Not same");
+        }
+    </script>
+</body>
+</html>
